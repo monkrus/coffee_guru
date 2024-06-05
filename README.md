@@ -1,2 +1,2 @@
-### Select a coffee recipe 
+### Selects a coffee recipe for you
 
