@@ -30,7 +30,24 @@ def vector_embedding():
         
         
         
-st.title("            Art of coffee")
+st.title("Art of coffee")
+import streamlit as st
+
+# Use CSS to center the title
+st.markdown(
+    """
+    <style>
+    .centered-title {
+        text-align: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Apply the CSS class to the title
+st.markdown('<h1 class="centered-title">Art of Coffee</h1>', unsafe_allow_html=True)
+
 llm = ChatNVIDIA(model="meta/llama3-70b-instruct")
 
 import streamlit as st
