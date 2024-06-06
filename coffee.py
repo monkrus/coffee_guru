@@ -30,7 +30,7 @@ def vector_embedding():
         
         
         
-st.title("Coffee Recipe Guru")
+st.title("Art of coffee")
 llm = ChatNVIDIA(model="meta/llama3-70b-instruct")
 
 import streamlit as st
@@ -52,9 +52,9 @@ Questions:{input}
 prompt1=st.text_input("Give me an ice coffee recipe please :)")
 
 
-if st.button("Click to find out"):
+if st.button("Brew me"):
     vector_embedding()
-    st.write("Coffee Recipe DB Is Ready")
+    st.write("Your coffee is ready")
 
 import time
 
