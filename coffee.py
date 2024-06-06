@@ -30,11 +30,11 @@ def vector_embedding():
         
         
         
-st.title("Art of coffee")
+st.title("            Art of coffee")
 llm = ChatNVIDIA(model="meta/llama3-70b-instruct")
 
 import streamlit as st
-st.image('coffee.jpg', caption='steaming cup of coffee')
+st.image('coffee.jpg')
 
 prompt=ChatPromptTemplate.from_template(
 """
@@ -49,7 +49,7 @@ Questions:{input}
 )
 
 
-prompt1=st.text_input("Give me an ice coffee recipe please :)")
+prompt1=st.text_input("Could you provide me with an iced coffee recipe?")
 
 
 if st.button("Brew me"):
