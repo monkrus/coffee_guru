@@ -28,9 +28,7 @@ def vector_embedding():
         st.session_state.final_documents=st.session_state.text_splitter.split_documents(st.session_state.docs) #splitting
         st.session_state.vectors=FAISS.from_documents(st.session_state.final_documents,st.session_state.embeddings) #vector OpenAI embeddings
         
-        
-        
-st.title("Art of coffee")
+            
 import streamlit as st
 
 # Use CSS to center the title
